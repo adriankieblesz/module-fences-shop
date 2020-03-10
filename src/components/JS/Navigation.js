@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import '../SCSS/Navigation.scss';
 
 class Navigation extends Component {
-    state = {}
+
     render() {
+
         return (
-            <nav>
-                <a href="">Test</a>
-                <a href="">Test</a>
-                <a href="">Test</a>
-                <a href="">Test</a>
-                <a href="">Test</a>
+            <nav className={`${this.props.change ? "navbar navbar-change" : "navbar"}`}>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Offert</a>
+                <a href="">Gallery</a>
+                <a href="">Contact</a>
             </nav>
         );
     }
