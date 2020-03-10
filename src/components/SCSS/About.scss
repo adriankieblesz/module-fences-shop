@@ -1,0 +1,27 @@
+#about{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #212121;
+    color: #fefefe;
+    width: 100%;
+
+    .about-grid{
+        max-width: 80%;
+        padding: 50px 0;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+        line-height: 1.7em;
+        text-align: justify;
+        align-items: center;
+    }
+    .about-grid-item{
+        padding: 100px 50px;
+
+        &:nth-child(1){
+            font-size: 2em;
+        }
+        &:nth-child(2){
+            border-left: 1px solid white;
+        }
+    }
+}

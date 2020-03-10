@@ -6,6 +6,7 @@
     left: 20%;
     transform: translate(-20%, -50%);
     text-align: left;
+
     h1{
         color: white; 
         font-size: 4em;
@@ -14,6 +15,56 @@
             font-weight: 100;
             font-size: 3em;
             letter-spacing: .4em;
+        }
+    }
+    button{
+        outline: none;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: 15px 25px;
+        margin-top: 30px;
+        position: relative;
+        letter-spacing: .4em;
+        transition: all .3s;
+        background-color: black;
+
+        a{
+            text-decoration: none;
+            color: white;
+            transition: .3s;
+        }
+        span{
+            display: block;
+            transition: transform .5s;
+        }
+        img{
+            transition: .2s all;
+            position: absolute;
+            top: 55%;
+            right: 0%;
+            width: 25px;
+            height: 25px;
+            transform: translate(0%, -55%);
+            opacity: 0;
+        }
+    }
+    button:hover{
+        cursor: pointer;       
+        color: black;
+        background-color: white;
+
+        a{
+            color: black;
+        }
+        span{          
+            transform: translateX(-5%);
+        }
+        img{
+            transition: .5s .2s all;
+            opacity: 1;  
+            right: 5%;
+            transform: translate(5%, -55%);
         }
     }
 }
