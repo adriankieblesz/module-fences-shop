@@ -1,11 +1,14 @@
 import React from 'react';
-import Navigation from './components/JS/Navigation';
+import Head from './components/JS/Head';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <Head />
+      <br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 }
