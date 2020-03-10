@@ -1,0 +1,19 @@
+.title{
+    text-transform: uppercase;
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    text-align: left;
+    h1{
+        color: white; 
+        font-size: 4em;
+        
+        &:nth-child(1){
+            font-weight: 100;
+            font-size: 3em;
+            letter-spacing: .4em;
+        }
+    }
+}

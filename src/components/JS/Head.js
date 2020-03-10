@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from "./Navigation";
+import Title from './Title';
 import '../SCSS/Head.scss';
 
 class Head extends Component {
@@ -22,6 +23,7 @@ class Head extends Component {
         return (
             <div id="head">
                 <Navigation change={navbarChange} />
+                <Title />
             </div>
         );
     }
