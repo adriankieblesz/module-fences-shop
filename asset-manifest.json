@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/module-fences-shop/static/css/main.dfd42d17.chunk.css",
+    "main.js": "/module-fences-shop/static/js/main.2a01df03.chunk.js",
+    "main.js.map": "/module-fences-shop/static/js/main.2a01df03.chunk.js.map",
+    "runtime-main.js": "/module-fences-shop/static/js/runtime-main.5053dd35.js",
+    "runtime-main.js.map": "/module-fences-shop/static/js/runtime-main.5053dd35.js.map",
+    "static/js/2.0fe21567.chunk.js": "/module-fences-shop/static/js/2.0fe21567.chunk.js",
+    "static/js/2.0fe21567.chunk.js.map": "/module-fences-shop/static/js/2.0fe21567.chunk.js.map",
+    "index.html": "/module-fences-shop/index.html",
+    "precache-manifest.a224510aecc1b12a68026c8c1e2c3a63.js": "/module-fences-shop/precache-manifest.a224510aecc1b12a68026c8c1e2c3a63.js",
+    "service-worker.js": "/module-fences-shop/service-worker.js",
+    "static/css/main.dfd42d17.chunk.css.map": "/module-fences-shop/static/css/main.dfd42d17.chunk.css.map",
+    "static/js/2.0fe21567.chunk.js.LICENSE.txt": "/module-fences-shop/static/js/2.0fe21567.chunk.js.LICENSE.txt",
+    "static/media/Head.scss": "/module-fences-shop/static/media/background_1_flipped.0433220f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5053dd35.js",
+    "static/js/2.0fe21567.chunk.js",
+    "static/css/main.dfd42d17.chunk.css",
+    "static/js/main.2a01df03.chunk.js"
+  ]
+}
