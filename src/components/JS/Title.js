@@ -12,7 +12,6 @@ const Title = () => {
                     <span>Check offer</span>
                     <img src={icon} alt="icon-down" />
                 </a>
-
             </button>
         </div>
     );
