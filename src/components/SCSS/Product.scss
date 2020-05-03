@@ -6,19 +6,43 @@
     h4{
         font-size: 1.3em;
     }
-    &:hover{
-        box-shadow: 0 20px 50px rgba(128, 128, 128, 0.7);
-        transform: translateY(-5%);
+}
+.product:hover{
+    box-shadow: 0 20px 50px rgba(128, 128, 128, 0.7);
+    transform: translateY(-5%);
+
+    .product-price{
+        transform: translateX(-35%);
     }
-    
+    .product-inner{
+        img{
+            opacity: 1;
+            pointer-events: all;
+        }
+        .product-info{
+            transform: translateX(20%);
+        }
+        .product-buy{
+            transform: translateX(100%);
+        }
+    }
 }
 .product-inner{  
     .product-price{
+        transition: .3s ease all;
         font-size: 1.2em;
         margin: 0;
         padding: 0;
+        display: inline-block;
+        vertical-align: top;
     }
     img{
+        transition: .3s ease all;
         width: 30px;
+        display: inline-block;
+        position: absolute;
+        transform: translateX(130%);
+        opacity: 0;
+        pointer-events: none;
     }
 }
