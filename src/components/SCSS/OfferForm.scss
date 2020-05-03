@@ -1,0 +1,57 @@
+#offer-form{ 
+    label{
+        font-size: 1.5em;
+    }
+    select{
+        width: 150px;
+        margin: 0 30px 0 5px;
+        padding: 5px 35px 5px 5px;
+        font-size: 1.2em;
+        appearance: none;
+        background-color: #212121;
+        color: #fefefe;
+        option:hover{
+            cursor: pointer;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    [type="text"]{
+        font-size: 1.2em;
+        border: 1px solid black;
+        padding: 5px 35px 5px 5px;
+        background-color: #212121;
+        color: #fefefe;
+    }
+    ::-webkit-input-placeholder { /* Edge */
+        color: #fefefe;
+      }
+    :-ms-input-placeholder { /* Internet Explorer */
+        color: #fefefe;
+    }  
+    ::placeholder {
+        color: #fefefe;
+        opacity: 1;
+    }
+    label::after{
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 5px;
+    }
+    #labelType::after{
+        content: url(../../images/icons/type30.png);            
+    }
+    #labelMaterial::after{
+        content: url(../../images/icons/material30.png);
+    }
+    #labelPrice::after{
+        content: url(../../images/icons/price30.png); 
+    }
+    #labelSearch::after{
+        content: url(../../images/icons/search30.png);
+        margin-right: 5px;
+    }
+} 
