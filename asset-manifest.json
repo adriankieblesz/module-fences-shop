@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/module-fences-shop/static/css/main.054a27b8.chunk.css",
-    "main.js": "/module-fences-shop/static/js/main.2a01df03.chunk.js",
-    "main.js.map": "/module-fences-shop/static/js/main.2a01df03.chunk.js.map",
+    "main.css": "/module-fences-shop/static/css/main.52466fe0.chunk.css",
+    "main.js": "/module-fences-shop/static/js/main.631d6737.chunk.js",
+    "main.js.map": "/module-fences-shop/static/js/main.631d6737.chunk.js.map",
     "runtime-main.js": "/module-fences-shop/static/js/runtime-main.5053dd35.js",
     "runtime-main.js.map": "/module-fences-shop/static/js/runtime-main.5053dd35.js.map",
-    "static/js/2.0fe21567.chunk.js": "/module-fences-shop/static/js/2.0fe21567.chunk.js",
-    "static/js/2.0fe21567.chunk.js.map": "/module-fences-shop/static/js/2.0fe21567.chunk.js.map",
+    "static/js/2.27320975.chunk.js": "/module-fences-shop/static/js/2.27320975.chunk.js",
+    "static/js/2.27320975.chunk.js.map": "/module-fences-shop/static/js/2.27320975.chunk.js.map",
     "index.html": "/module-fences-shop/index.html",
-    "precache-manifest.1b8bc4489e20c4c404b963061f7a8b5b.js": "/module-fences-shop/precache-manifest.1b8bc4489e20c4c404b963061f7a8b5b.js",
+    "precache-manifest.f189a079c6910bdf8880f11cb492e398.js": "/module-fences-shop/precache-manifest.f189a079c6910bdf8880f11cb492e398.js",
     "service-worker.js": "/module-fences-shop/service-worker.js",
-    "static/css/main.054a27b8.chunk.css.map": "/module-fences-shop/static/css/main.054a27b8.chunk.css.map",
-    "static/js/2.0fe21567.chunk.js.LICENSE.txt": "/module-fences-shop/static/js/2.0fe21567.chunk.js.LICENSE.txt",
-    "static/media/Head.scss": "/module-fences-shop/static/media/background_1_flipped.0433220f.jpg"
+    "static/css/main.52466fe0.chunk.css.map": "/module-fences-shop/static/css/main.52466fe0.chunk.css.map",
+    "static/js/2.27320975.chunk.js.LICENSE.txt": "/module-fences-shop/static/js/2.27320975.chunk.js.LICENSE.txt",
+    "static/media/Head.scss": "/module-fences-shop/static/media/background_1_flipped.0433220f.jpg",
+    "static/media/Services.scss": "/module-fences-shop/static/media/service-4c.27b6cad5.jpg",
+    "static/media/type-2.png": "/module-fences-shop/static/media/type-2.5fd647f8.png",
+    "static/media/type-3.png": "/module-fences-shop/static/media/type-3.9668a61f.png",
+    "static/media/type-4.png": "/module-fences-shop/static/media/type-4.9006b5e4.png",
+    "static/media/type-6.png": "/module-fences-shop/static/media/type-6.b7047983.png",
+    "static/media/type-7.png": "/module-fences-shop/static/media/type-7.0d1f334c.png",
+    "static/media/type-8.png": "/module-fences-shop/static/media/type-8.6085aad9.png",
+    "static/media/type-9.png": "/module-fences-shop/static/media/type-9.8edec8ba.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5053dd35.js",
-    "static/js/2.0fe21567.chunk.js",
-    "static/css/main.054a27b8.chunk.css",
-    "static/js/main.2a01df03.chunk.js"
+    "static/js/2.27320975.chunk.js",
+    "static/css/main.52466fe0.chunk.css",
+    "static/js/main.631d6737.chunk.js"
   ]
 }
