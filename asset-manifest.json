@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/module-fences-shop/static/css/main.52466fe0.chunk.css",
-    "main.js": "/module-fences-shop/static/js/main.7216d8de.chunk.js",
-    "main.js.map": "/module-fences-shop/static/js/main.7216d8de.chunk.js.map",
+    "main.css": "/module-fences-shop/static/css/main.e2da4ac0.chunk.css",
+    "main.js": "/module-fences-shop/static/js/main.894b8f55.chunk.js",
+    "main.js.map": "/module-fences-shop/static/js/main.894b8f55.chunk.js.map",
     "runtime-main.js": "/module-fences-shop/static/js/runtime-main.5053dd35.js",
     "runtime-main.js.map": "/module-fences-shop/static/js/runtime-main.5053dd35.js.map",
     "static/js/2.2cf4d66b.chunk.js": "/module-fences-shop/static/js/2.2cf4d66b.chunk.js",
     "static/js/2.2cf4d66b.chunk.js.map": "/module-fences-shop/static/js/2.2cf4d66b.chunk.js.map",
     "index.html": "/module-fences-shop/index.html",
-    "precache-manifest.ac506dd8c09dd17405d9072218755e1a.js": "/module-fences-shop/precache-manifest.ac506dd8c09dd17405d9072218755e1a.js",
+    "precache-manifest.84d3b0c6a2ab3933a54fe15aa37cb629.js": "/module-fences-shop/precache-manifest.84d3b0c6a2ab3933a54fe15aa37cb629.js",
     "service-worker.js": "/module-fences-shop/service-worker.js",
-    "static/css/main.52466fe0.chunk.css.map": "/module-fences-shop/static/css/main.52466fe0.chunk.css.map",
+    "static/css/main.e2da4ac0.chunk.css.map": "/module-fences-shop/static/css/main.e2da4ac0.chunk.css.map",
     "static/js/2.2cf4d66b.chunk.js.LICENSE.txt": "/module-fences-shop/static/js/2.2cf4d66b.chunk.js.LICENSE.txt",
     "static/media/Head.scss": "/module-fences-shop/static/media/background_1_flipped.0433220f.jpg",
     "static/media/Services.scss": "/module-fences-shop/static/media/service-4c.27b6cad5.jpg",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.5053dd35.js",
     "static/js/2.2cf4d66b.chunk.js",
-    "static/css/main.52466fe0.chunk.css",
-    "static/js/main.7216d8de.chunk.js"
+    "static/css/main.e2da4ac0.chunk.css",
+    "static/js/main.894b8f55.chunk.js"
   ]
 }
