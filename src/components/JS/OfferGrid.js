@@ -12,6 +12,7 @@ const OfferGrid = ({ products }) => {
                 name={product.name}
                 price={product.price}
                 buyClick={() => product.buyClick(product.id)}
+                infoClick={() => product.infoClick(product)}
             />)}
         </div>
     );
