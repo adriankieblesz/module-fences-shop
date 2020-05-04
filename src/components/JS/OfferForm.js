@@ -1,6 +1,6 @@
 import React from 'react';
 import '../SCSS/OfferForm.scss';
-const OfferForm = ({ handleOnChange }) => {
+const OfferForm = ({ handleOnChange, handlePriceChange }) => {
     return (
         <form id="offer-form" action="" onSubmit={(e) => e.preventDefault()}>
             <label id="labelType" htmlFor="type">Type</label>
@@ -16,7 +16,7 @@ const OfferForm = ({ handleOnChange }) => {
                 <option value="2">Wood</option>
             </select>
             <label id="labelPrice" htmlFor="price">Price</label>
-            <select name="" id="price">
+            <select name="" id="price" onChange={handlePriceChange}>
                 <option value="0">Ascending</option>
                 <option value="1">Descending</option>
             </select>

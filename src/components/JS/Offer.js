@@ -11,7 +11,10 @@ class Offer extends Component {
         info: false,
         details: null,
         modalClassName: "slide",
-        searchValue: ""
+        searchValue: "",
+        material: "",
+        priceStatement: this.descend
+
     }
     componentDidMount() {
         let products = [];
@@ -53,23 +56,34 @@ class Offer extends Component {
             }))
         }, 500);
     }
-    handleOnChange = (e) => {
+    handleInputSearchOnChange = (e) => {
         this.setState({
             searchValue: e.target.value,
         })
     }
+    handlePriceChange = (e) => {
+        this.ascend = (product) => product.price < 1;
+        this.descend = (product) => product.price > 1;
+
+        e.target.value > 0 ? this.setState(() => ({
+            priceStatement: this.descend
+        })) : this.setState(() => ({
+            priceStatement: this.ascend
+        }))
+
+    }
     render() {
 
-
-        const { products, details, info, searchValue } = this.state;
-        let filteredProducts = products.filter(product => product.name.toLowerCase().includes(this.state.searchValue.toLocaleLowerCase()));
+        console.log(this.state.priceStatement)
+        const { products, details, info } = this.state;
+        let filteredProducts = products.filter(product => product.name.toLowerCase().includes(this.state.searchValue.toLocaleLowerCase())).sort(this.state.priceStatement);
         return (
             <section id="offer">
                 <h1>Offer</h1>
                 <p className="offer-description">In our extensive offer you can find everything according to your needs. We offer fences made of two types of materials (metal, wood) in various style variants.</p>
                 <OfferForm
-                    handleOnChange={this.handleOnChange}
-                    searchValue={searchValue}
+                    handleOnChange={this.handleInputSearchOnChange}
+                    handlePriceChange={this.handlePriceChange}
                 />
                 <OfferGrid products={filteredProducts} />
                 {info && <ModalWindow

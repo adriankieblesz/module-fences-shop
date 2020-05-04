@@ -6,13 +6,13 @@ const ProductInfoPanel = ({ url, number, name, width, height, material, spanCoun
             <div className="info-container">
                 <img src={url} alt="" />
                 <div className="info-details">
-                    <p>Number: {number}</p>
-                    <p>Name: {name}</p>
-                    <p>Width: {width}cm</p>
-                    <p>Height: {height}cm</p>
-                    <p>Material: {material}</p>
-                    <p>Spans: {spanCount}</p>
-                    <p>Price: {price}$</p>
+                    <p><strong>Number</strong>: {number}</p>
+                    <p><strong>Name</strong>: {name}</p>
+                    <p><strong>Width</strong>: {width}cm</p>
+                    <p><strong>Height</strong>: {height}cm</p>
+                    <p><strong>Material</strong>: {material}</p>
+                    <p><strong>Spans</strong>: {spanCount}</p>
+                    <p><strong>Price</strong>: {price}$</p>
                 </div>
             </div>
         </div>
