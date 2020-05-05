@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "238438204f62633781328e2556b97bee",
+    "revision": "ed85bbf54a731bdab424636bb8366314",
     "url": "/module-fences-shop/index.html"
   },
   {
-    "revision": "bd66d593d6ef822ba2a9",
+    "revision": "9d23d4ec761603223353",
     "url": "/module-fences-shop/static/css/main.e2da4ac0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/module-fences-shop/static/js/2.2cf4d66b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bd66d593d6ef822ba2a9",
-    "url": "/module-fences-shop/static/js/main.894b8f55.chunk.js"
+    "revision": "9d23d4ec761603223353",
+    "url": "/module-fences-shop/static/js/main.015d9962.chunk.js"
   },
   {
     "revision": "9a11a7381144de07afa8",
@@ -44,8 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/module-fences-shop/static/media/service-4c.27b6cad5.jpg"
   },
   {
+    "revision": "a6b8efa7e18f86dd56e4cb7583859d49",
+    "url": "/module-fences-shop/static/media/type-1.a6b8efa7.png"
+  },
+  {
     "revision": "626a702f1d4245755661f4abfd2615da",
     "url": "/module-fences-shop/static/media/type-10.626a702f.png"
+  },
+  {
+    "revision": "65e029abf4bab491669e46971dc16fe1",
+    "url": "/module-fences-shop/static/media/type-10.65e029ab.png"
   },
   {
     "revision": "93892c4028c11aa6ea7648600a1627af",
@@ -88,6 +96,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/module-fences-shop/static/media/type-2.5fd647f8.png"
   },
   {
+    "revision": "e4927276dddbd763e935f0786a39e25c",
+    "url": "/module-fences-shop/static/media/type-2.e4927276.png"
+  },
+  {
     "revision": "e4874b0af5f07bf1dde6eaaa7ab11b42",
     "url": "/module-fences-shop/static/media/type-20.e4874b0a.png"
   },
@@ -108,12 +120,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/module-fences-shop/static/media/type-24.f7da9712.png"
   },
   {
+    "revision": "7f18c1a032cd91a1a72dbcbab10e496f",
+    "url": "/module-fences-shop/static/media/type-3.7f18c1a0.png"
+  },
+  {
     "revision": "9668a61fd9440eda4172e058c5d4974b",
     "url": "/module-fences-shop/static/media/type-3.9668a61f.png"
   },
   {
     "revision": "9006b5e4065145f1ee8efd94300026e0",
     "url": "/module-fences-shop/static/media/type-4.9006b5e4.png"
+  },
+  {
+    "revision": "9b297c1255e7a5e91374107f64d40f81",
+    "url": "/module-fences-shop/static/media/type-4.9b297c12.png"
+  },
+  {
+    "revision": "2cbc62047ad4168692f7663375d05709",
+    "url": "/module-fences-shop/static/media/type-5.2cbc6204.png"
+  },
+  {
+    "revision": "951f37a50223254ed60066c826a9c71f",
+    "url": "/module-fences-shop/static/media/type-6.951f37a5.png"
   },
   {
     "revision": "b7047983eff879e050be5b9802c4ba8c",
@@ -124,11 +152,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/module-fences-shop/static/media/type-7.0d1f334c.png"
   },
   {
+    "revision": "f30747d56050c9a8c82e2489852eaf39",
+    "url": "/module-fences-shop/static/media/type-7.f30747d5.png"
+  },
+  {
+    "revision": "5c68670d95fe3e12fda4e85d4715444b",
+    "url": "/module-fences-shop/static/media/type-8.5c68670d.png"
+  },
+  {
     "revision": "6085aad944451ae76b33cd092fba708e",
     "url": "/module-fences-shop/static/media/type-8.6085aad9.png"
   },
   {
     "revision": "8edec8ba338d9e7882ba06ade147a786",
     "url": "/module-fences-shop/static/media/type-9.8edec8ba.png"
+  },
+  {
+    "revision": "a052663392b305f00369cee2e6062094",
+    "url": "/module-fences-shop/static/media/type-9.a0526633.png"
   }
 ]);

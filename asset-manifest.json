@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/module-fences-shop/static/css/main.e2da4ac0.chunk.css",
-    "main.js": "/module-fences-shop/static/js/main.894b8f55.chunk.js",
-    "main.js.map": "/module-fences-shop/static/js/main.894b8f55.chunk.js.map",
+    "main.js": "/module-fences-shop/static/js/main.015d9962.chunk.js",
+    "main.js.map": "/module-fences-shop/static/js/main.015d9962.chunk.js.map",
     "runtime-main.js": "/module-fences-shop/static/js/runtime-main.5053dd35.js",
     "runtime-main.js.map": "/module-fences-shop/static/js/runtime-main.5053dd35.js.map",
     "static/js/2.2cf4d66b.chunk.js": "/module-fences-shop/static/js/2.2cf4d66b.chunk.js",
     "static/js/2.2cf4d66b.chunk.js.map": "/module-fences-shop/static/js/2.2cf4d66b.chunk.js.map",
     "index.html": "/module-fences-shop/index.html",
-    "precache-manifest.84d3b0c6a2ab3933a54fe15aa37cb629.js": "/module-fences-shop/precache-manifest.84d3b0c6a2ab3933a54fe15aa37cb629.js",
+    "precache-manifest.072d8c292a94ec1fd861cb4200a53f04.js": "/module-fences-shop/precache-manifest.072d8c292a94ec1fd861cb4200a53f04.js",
     "service-worker.js": "/module-fences-shop/service-worker.js",
     "static/css/main.e2da4ac0.chunk.css.map": "/module-fences-shop/static/css/main.e2da4ac0.chunk.css.map",
     "static/js/2.2cf4d66b.chunk.js.LICENSE.txt": "/module-fences-shop/static/js/2.2cf4d66b.chunk.js.LICENSE.txt",
     "static/media/Head.scss": "/module-fences-shop/static/media/background_1_flipped.0433220f.jpg",
     "static/media/Services.scss": "/module-fences-shop/static/media/service-4c.27b6cad5.jpg",
-    "static/media/type-10.png": "/module-fences-shop/static/media/type-10.626a702f.png",
+    "static/media/type-1.png": "/module-fences-shop/static/media/type-1.a6b8efa7.png",
+    "static/media/type-10.png": "/module-fences-shop/static/media/type-10.65e029ab.png",
     "static/media/type-11.png": "/module-fences-shop/static/media/type-11.93892c40.png",
     "static/media/type-12.png": "/module-fences-shop/static/media/type-12.6c2e7a6d.png",
     "static/media/type-13.png": "/module-fences-shop/static/media/type-13.1928bc92.png",
@@ -24,23 +25,24 @@
     "static/media/type-17.png": "/module-fences-shop/static/media/type-17.8d407ecf.png",
     "static/media/type-18.png": "/module-fences-shop/static/media/type-18.718e39f6.png",
     "static/media/type-19.png": "/module-fences-shop/static/media/type-19.998606fa.png",
-    "static/media/type-2.png": "/module-fences-shop/static/media/type-2.5fd647f8.png",
+    "static/media/type-2.png": "/module-fences-shop/static/media/type-2.e4927276.png",
     "static/media/type-20.png": "/module-fences-shop/static/media/type-20.e4874b0a.png",
     "static/media/type-21.png": "/module-fences-shop/static/media/type-21.daee0a01.png",
     "static/media/type-22.png": "/module-fences-shop/static/media/type-22.088b4729.png",
     "static/media/type-23.png": "/module-fences-shop/static/media/type-23.da1c3770.png",
     "static/media/type-24.png": "/module-fences-shop/static/media/type-24.f7da9712.png",
     "static/media/type-3.png": "/module-fences-shop/static/media/type-3.9668a61f.png",
-    "static/media/type-4.png": "/module-fences-shop/static/media/type-4.9006b5e4.png",
+    "static/media/type-4.png": "/module-fences-shop/static/media/type-4.9b297c12.png",
+    "static/media/type-5.png": "/module-fences-shop/static/media/type-5.2cbc6204.png",
     "static/media/type-6.png": "/module-fences-shop/static/media/type-6.b7047983.png",
-    "static/media/type-7.png": "/module-fences-shop/static/media/type-7.0d1f334c.png",
+    "static/media/type-7.png": "/module-fences-shop/static/media/type-7.f30747d5.png",
     "static/media/type-8.png": "/module-fences-shop/static/media/type-8.6085aad9.png",
-    "static/media/type-9.png": "/module-fences-shop/static/media/type-9.8edec8ba.png"
+    "static/media/type-9.png": "/module-fences-shop/static/media/type-9.a0526633.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5053dd35.js",
     "static/js/2.2cf4d66b.chunk.js",
     "static/css/main.e2da4ac0.chunk.css",
-    "static/js/main.894b8f55.chunk.js"
+    "static/js/main.015d9962.chunk.js"
   ]
 }
