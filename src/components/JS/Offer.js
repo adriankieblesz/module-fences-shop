@@ -14,8 +14,8 @@ class Offer extends Component {
         details: null,
         modalClassName: "slide",
         type: function () { },
+        material: function () { },
         searchValue: "",
-        material: "",
         priceStatement: this.descend
     }
     componentDidMount() {
@@ -60,6 +60,7 @@ class Offer extends Component {
             fences,
             gates,
             type: (product) => product.type === "fence" || product.type === "gate",
+            material: (product) => product.material === "Metal" || product.material === "Wood"
         });
 
     }
@@ -101,6 +102,23 @@ class Offer extends Component {
         }
         this.setState(() => ({ type }));
     }
+    handleMaterialChange = (e) => {
+        let material;
+        switch (e.target.value) {
+            case "1":
+                material = (product) => product.material === "Metal";
+                break;
+            case "2":
+                material = (product) => product.material === "Wood";
+                break;
+            case "0":
+                material = (product) => product.material === "Metal" || product.material === "Wood";
+                break;
+            default:
+                break;
+        }
+        this.setState(() => ({ material }));
+    }
     handleInputSearchOnChange = (e) => {
         this.setState({
             searchValue: e.target.value,
@@ -117,9 +135,9 @@ class Offer extends Component {
         }))
     }
     render() {
-        const { products, details, type, info, searchValue, priceStatement } = this.state;
+        const { products, details, type, material, info, searchValue, priceStatement } = this.state;
         // this.filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase())).sort(priceStatement);
-        let filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase())).filter(type).sort(priceStatement);
+        let filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase())).filter(type).filter(material).sort(priceStatement);
         console.log(filteredProducts);
         return (
             <section id="offer">
@@ -127,6 +145,7 @@ class Offer extends Component {
                 <p className="offer-description">In our extensive offer you can find everything according to your needs. We offer fences made of two types of materials (metal, wood) in various style variants.</p>
                 <OfferForm
                     handleTypeChange={this.handleTypeChange}
+                    handleMaterialChange={this.handleMaterialChange}
                     handleOnChange={this.handleInputSearchOnChange}
                     handlePriceChange={this.handlePriceChange}
                 />
