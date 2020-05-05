@@ -9,7 +9,6 @@ class Offer extends Component {
         products: [],
         fences: [],
         gates: [],
-        filteredProducts: [],
         info: false,
         details: null,
         modalClassName: "slide",
@@ -126,7 +125,7 @@ class Offer extends Component {
     }
     handlePriceChange = (e) => {
         this.ascend = (product) => product.price < 0;
-        this.descend = (product) => product.price > 0;
+        this.descend = (product) => product.price > 1;
 
         e.target.value > 0 ? this.setState(() => ({
             priceStatement: this.descend
@@ -136,9 +135,7 @@ class Offer extends Component {
     }
     render() {
         const { products, details, type, material, info, searchValue, priceStatement } = this.state;
-        // this.filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase())).sort(priceStatement);
         let filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase())).filter(type).filter(material).sort(priceStatement);
-        console.log(filteredProducts);
         return (
             <section id="offer">
                 <h1>Offer</h1>
