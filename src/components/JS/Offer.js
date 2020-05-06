@@ -3,6 +3,7 @@ import OfferGrid from './OfferGrid';
 import OfferForm from './OfferForm';
 import ModalWindow from './ModalWindow';
 import ProductInfoPanel from './ProductInfoPanel';
+import Adjust from './Adjust';
 import '../SCSS/Offer.scss';
 class Offer extends Component {
     state = {
@@ -19,7 +20,7 @@ class Offer extends Component {
     }
     componentDidMount() {
         let fences = [];
-        for (let i = 0; i < 24; i++) {
+        for (let i = 0; i < 10; i++) {
             fences.push({
                 id: i + 1,
                 number: `TF000${i + 1}`,
@@ -38,7 +39,7 @@ class Offer extends Component {
         let gates = [];
         for (let i = 0; i < 10; i++) {
             gates.push({
-                id: i + 25,
+                id: i + 11,
                 number: `TG000${i + 1}`,
                 type: "gate",
                 url: require(`../../images/gate-models/type-${i + 1}.png`),
@@ -134,7 +135,8 @@ class Offer extends Component {
         }))
     }
     render() {
-        const { products, details, type, material, info, searchValue, priceStatement } = this.state;
+
+        const { products, details, type, material, info, searchValue, priceStatement, fences, gates } = this.state;
         let filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase())).filter(type).filter(material).sort(priceStatement);
         return (
             <section id="offer">
@@ -161,6 +163,10 @@ class Offer extends Component {
                         price={details.price}
                     />}
                 />}
+                <Adjust
+                    fences={fences}
+                    gates={gates}
+                />
             </section>
         );
     }

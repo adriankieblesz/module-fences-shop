@@ -1,0 +1,21 @@
+#adjust{
+    width: 100%;
+    height: 120vh;
+    background-color: #f3f3f3;
+    padding: 0 5%;
+    .adjust-header{
+        margin: 0;
+        padding: 100px 0 50px 0;
+    }
+    p{
+        font-weight: 100;
+        font-size: 1.5em;
+    }
+    .adjust-grid{
+        display: grid;
+        width: 100%;
+        height: 55%;
+        border: 1px solid black;
+        grid-template-columns: 4fr 1fr 1fr;
+    }
+}
