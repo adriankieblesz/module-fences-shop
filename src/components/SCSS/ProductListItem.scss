@@ -1,6 +1,6 @@
 .product-list-item{
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
     z-index: 1;
     padding: 5px 10px;
@@ -14,13 +14,14 @@
         opacity: 0;
         transition: .5s ease all;
         z-index: 2;
-        background-color: rgba(0,0,0,.5);
+        background-color: rgba(0,0,0,.7);
 
         p{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            color: #fefefe;
         }
     }
     .list-item-inner:hover{

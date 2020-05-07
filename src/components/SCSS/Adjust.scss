@@ -23,5 +23,11 @@
     }
     .grid-slide{
         transform: translateX(0); 
+        
+        #image-panel{
+            .main-image{
+                opacity: 1;
+            }
+        }
     }
 }
