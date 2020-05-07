@@ -13,12 +13,11 @@
         opacity: .1;
     }
     form{
+        translate: 1s ease all;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-
-        
+        transform: translate(-50%, -50%);   
     }
     label{
         font-size: 1.5em;

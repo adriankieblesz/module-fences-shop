@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ImagePanel from './ImagePanel';
 import ProductList from './ProductList';
+import FenceElement from './FenceElement';
 import '../SCSS/Adjust.scss';
 
 class Adjust extends Component {
@@ -8,7 +9,9 @@ class Adjust extends Component {
         fences: [],
         gates: [],
         mainPictureUrl: "",
-        pictureLoaded: false
+        pictureLoaded: false,
+        elements: [],
+        elementsAmount: 0
     }
 
     componentDidUpdate() {
@@ -30,12 +33,33 @@ class Adjust extends Component {
                 pictureLoaded: true
             }))
         }
+    }
+    handleImageClick = (url) => {
+        // let elements = this.state.elements.push(<FenceElement url={url} />)
+        let elements = [];
+        elements.push(<FenceElement
+            index={this.state.elementsAmount}
+            url={url}
+            handleFenceElementRightClick={this.handleFenceElementRightClick}
+        />);
+        this.setState((prevState) => ({
+            elements: prevState.elements.concat(elements),
+            elementsAmount: prevState.elementsAmount + 1
+        }))
+    }
+    handleFenceElementRightClick = (e) => {
+        e = e || window.event;
+        if (e.button === 2) {
+            let index = e.target.dataset.index;
 
-
-
+            this.setState((prevState) => ({
+                elements: prevState.elements.splice(index + 1, 1),
+                elementsAmount: prevState.elementsAmount - 1
+            }))
+        }
     }
     render() {
-        console.log(this.state.mainPictureUrl);
+        // console.log(this.state.elements);
         return (
 
             <div id="adjust">
@@ -45,9 +69,16 @@ class Adjust extends Component {
                     <ImagePanel
                         handleClickLoadPicture={this.handleClickLoadPicture}
                         url={this.state.mainPictureUrl}
+                        elements={this.state.elements}
                     />
-                    <ProductList products={this.state.fences} />
-                    <ProductList products={this.state.gates} />
+                    <ProductList
+                        products={this.state.fences}
+                        handleImageClick={this.handleImageClick}
+                    />
+                    <ProductList
+                        products={this.state.gates}
+                        handleImageClick={this.handleImageClick}
+                    />
                 </div>
 
             </div>
