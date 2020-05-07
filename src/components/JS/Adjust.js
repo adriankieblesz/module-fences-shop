@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import ImagePanel from './ImagePanel';
+import ProductList from './ProductList';
 import '../SCSS/Adjust.scss';
 
 class Adjust extends Component {
     state = {
         fences: [],
         gates: [],
-        mainPictureUrl: ""
+        mainPictureUrl: "",
+        pictureLoaded: false
     }
 
     componentDidUpdate() {
@@ -22,9 +24,13 @@ class Adjust extends Component {
     handleClickLoadPicture = (e) => {
         let file = e.target.files;
         let url = URL.createObjectURL(file[0]);
-        this.setState(() => ({
-            mainPictureUrl: url
-        }))
+        if (url !== "" && url !== null) {
+            this.setState(() => ({
+                mainPictureUrl: url,
+                pictureLoaded: true
+            }))
+        }
+
 
 
     }
@@ -35,11 +41,13 @@ class Adjust extends Component {
             <div id="adjust">
                 <h1 className="adjust-header">Adjust</h1>
                 <p>You can easly adjust your fence right now. You just need to upload picture of your object and choose one of the models listed below. It's very easy!</p>
-                <div id="adjust-grid">
+                <div className={this.state.pictureLoaded ? "adjust-grid grid-slide" : "adjust-grid"}>
                     <ImagePanel
                         handleClickLoadPicture={this.handleClickLoadPicture}
                         url={this.state.mainPictureUrl}
                     />
+                    <ProductList products={this.state.fences} />
+                    <ProductList products={this.state.gates} />
                 </div>
 
             </div>
