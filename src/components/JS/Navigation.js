@@ -8,7 +8,6 @@ const Navigation = ({ change }) => {
             <a href="">About</a>
             <a href="">Services</a>
             <a href="">Offer</a>
-            <a href="">Gallery</a>
             <a href="">Contact</a>
         </nav>
     );

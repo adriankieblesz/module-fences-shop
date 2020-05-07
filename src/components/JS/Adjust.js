@@ -35,7 +35,7 @@ class Adjust extends Component {
             <div id="adjust">
                 <h1 className="adjust-header">Adjust</h1>
                 <p>You can easly adjust your fence right now. You just need to upload picture of your object and choose one of the models listed below. It's very easy!</p>
-                <div className="adjust-grid">
+                <div id="adjust-grid">
                     <ImagePanel
                         handleClickLoadPicture={this.handleClickLoadPicture}
                         url={this.state.mainPictureUrl}
