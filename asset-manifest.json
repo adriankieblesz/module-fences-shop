@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/module-fences-shop/static/css/main.3efae504.chunk.css",
-    "main.js": "/module-fences-shop/static/js/main.318c5053.chunk.js",
-    "main.js.map": "/module-fences-shop/static/js/main.318c5053.chunk.js.map",
+    "main.js": "/module-fences-shop/static/js/main.a885508d.chunk.js",
+    "main.js.map": "/module-fences-shop/static/js/main.a885508d.chunk.js.map",
     "runtime-main.js": "/module-fences-shop/static/js/runtime-main.5053dd35.js",
     "runtime-main.js.map": "/module-fences-shop/static/js/runtime-main.5053dd35.js.map",
     "static/js/2.5e94da3f.chunk.js": "/module-fences-shop/static/js/2.5e94da3f.chunk.js",
     "static/js/2.5e94da3f.chunk.js.map": "/module-fences-shop/static/js/2.5e94da3f.chunk.js.map",
     "index.html": "/module-fences-shop/index.html",
-    "precache-manifest.ba6997c5c3606abcaf613f4211152157.js": "/module-fences-shop/precache-manifest.ba6997c5c3606abcaf613f4211152157.js",
+    "precache-manifest.56b7361eaeac186a221f7ca180f01a4d.js": "/module-fences-shop/precache-manifest.56b7361eaeac186a221f7ca180f01a4d.js",
     "service-worker.js": "/module-fences-shop/service-worker.js",
     "static/css/main.3efae504.chunk.css.map": "/module-fences-shop/static/css/main.3efae504.chunk.css.map",
     "static/js/2.5e94da3f.chunk.js.LICENSE.txt": "/module-fences-shop/static/js/2.5e94da3f.chunk.js.LICENSE.txt",
@@ -43,6 +43,6 @@
     "static/js/runtime-main.5053dd35.js",
     "static/js/2.5e94da3f.chunk.js",
     "static/css/main.3efae504.chunk.css",
-    "static/js/main.318c5053.chunk.js"
+    "static/js/main.a885508d.chunk.js"
   ]
 }
