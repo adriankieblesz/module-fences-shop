@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43146507d7e535344b787b9c45943e48",
+    "revision": "0241a3ad8a37da09f4dfbb639444c4cc",
     "url": "/module-fences-shop/index.html"
   },
   {
-    "revision": "f63f1368bee6f8dd1861",
-    "url": "/module-fences-shop/static/css/main.3efae504.chunk.css"
+    "revision": "80566d3f23a92cac4d79",
+    "url": "/module-fences-shop/static/css/main.063b634f.chunk.css"
   },
   {
-    "revision": "040a1b51c65f966f4efd",
-    "url": "/module-fences-shop/static/js/2.5e94da3f.chunk.js"
+    "revision": "27918dd54200c594140d",
+    "url": "/module-fences-shop/static/js/2.b0b1860a.chunk.js"
   },
   {
     "revision": "5356fa2f66e46e6c05e4cbe319ac7f1d",
-    "url": "/module-fences-shop/static/js/2.5e94da3f.chunk.js.LICENSE.txt"
+    "url": "/module-fences-shop/static/js/2.b0b1860a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f63f1368bee6f8dd1861",
-    "url": "/module-fences-shop/static/js/main.a885508d.chunk.js"
+    "revision": "80566d3f23a92cac4d79",
+    "url": "/module-fences-shop/static/js/main.42ce7d45.chunk.js"
   },
   {
     "revision": "9a11a7381144de07afa8",
