@@ -59,25 +59,28 @@
             opacity: .8;
 
         }
-        // span{
-        //     transition: all .5s ease;
-        //     display: block;
-        //     height: 0;
-        //     overflow: hidden;
-        //     opacity: 0;
-        //     pointer-events: none;
-        //     transform: translateY(-20px);
-        //     color: red;
-        //     margin: 0;
-        //     padding: 0;
-        //     border: 0;
-        //     font-family: 'Kodchasan', sans-serif;
-        //   }
+      }
+      .submit-span{
+          position: relative;
+          overflow: hidden;
+
+          img{
+              transition: .3s ease all;
+              position: absolute;
+              left: 50%;
+              top: 10%;
+              opacity: 0;
+              pointer-events: none;
+          }
+      }
+      .submit-span:hover{
+          img{
+              left: 110%;
+              opacity: 1;       
+          }
       }
       [type="submit"]{
         padding: 10px 30px;
-        // border: 2px solid rgb(122, 14, 14);
-        // background-color: transparent;
         background-color: white;
         color: #212121;
         border: 2px solid #212121;
@@ -87,9 +90,6 @@
         transition: .3s ease all;
 
         &:hover{
-            // background-color: rgb(122, 14, 14);
-            // color: rgb(219, 207, 185);
-            // border: 2px solid black;
             border: 2px solid white;
             color: #fefefe;
             background-color: #212121;

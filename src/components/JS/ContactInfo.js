@@ -6,7 +6,7 @@ import '../SCSS/ContactInfo.scss';
 const ContactInfo = () => {
     return (
         <div className="contact-info">
-            <p>If you have anything you would like to tell us feel free to send us message! As a company we are open for new things and ideas comming from you.</p>
+            <p>If you have anything you would like to tell us feel free to send us message! As a company we are open for new things and ideas coming from you.</p>
             <ul>
                 <li>
                     <span>
