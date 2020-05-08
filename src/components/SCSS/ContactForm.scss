@@ -59,20 +59,20 @@
             opacity: .8;
 
         }
-        span{
-            transition: all .5s ease;
-            display: block;
-            height: 0;
-            overflow: hidden;
-            opacity: 0;
-            pointer-events: none;
-            transform: translateY(-20px);
-            color: red;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-family: 'Kodchasan', sans-serif;
-          }
+        // span{
+        //     transition: all .5s ease;
+        //     display: block;
+        //     height: 0;
+        //     overflow: hidden;
+        //     opacity: 0;
+        //     pointer-events: none;
+        //     transform: translateY(-20px);
+        //     color: red;
+        //     margin: 0;
+        //     padding: 0;
+        //     border: 0;
+        //     font-family: 'Kodchasan', sans-serif;
+        //   }
       }
       [type="submit"]{
         padding: 10px 30px;
@@ -97,5 +97,10 @@
             transform: scale(1.1, 1.1);
           }
       }
+}
 
+@media(max-width: 1024px){
+    .contact-form{
+        margin-top: 100px;
+    }
 }

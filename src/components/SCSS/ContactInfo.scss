@@ -11,18 +11,22 @@
 
         img{
             position: relative;
-            top: 5px;
+            top:5px;
         }
         p{
             display: inline-block;
-            margin: 0px 0 10px 30px
+            margin: 0px 0 10px 40px
         }
         .location-span{
             position: absolute;
-            
             p{
                 display: block;
             }
         }
+    }
+}
+@media(max-width: 1024px){
+    .contact-info{
+        max-width: 80%;
     }
 }
