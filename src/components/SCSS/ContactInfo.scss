@@ -1,0 +1,28 @@
+.contact-info{
+    max-width: 60%;
+    justify-self: center;
+    text-align: justify;
+    font-weight: 100;
+    font-size: 1.2em;
+    
+    ul{
+        list-style-type: none;
+        margin-top: 50px;    
+
+        img{
+            position: relative;
+            top: 5px;
+        }
+        p{
+            display: inline-block;
+            margin: 0px 0 10px 30px
+        }
+        .location-span{
+            position: absolute;
+            
+            p{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+#contact{
+    background-color: #212121;
+    color: white;
+    padding: 100px 0;
+
+    h1{
+        font-weight: 100;
+        font-size: 3em;
+        margin-bottom: 100px;
+    }
+    .contact-grid{
+        max-width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}

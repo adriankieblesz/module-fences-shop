@@ -3,6 +3,7 @@ import Head from './components/JS/Head';
 import About from './components/JS/About';
 import Offer from './components/JS/Offer';
 import Services from './components/JS/Services';
+import Contact from './components/JS/Contact';
 import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <About />
       <Services />
       <Offer />
-
+      <Contact />
       <br /><br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br /><br />
