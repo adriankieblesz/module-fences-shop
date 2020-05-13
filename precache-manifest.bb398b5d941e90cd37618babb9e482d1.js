@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0241a3ad8a37da09f4dfbb639444c4cc",
+    "revision": "3e073c81b92f8c7076dfd3a306532ab0",
     "url": "/module-fences-shop/index.html"
   },
   {
-    "revision": "80566d3f23a92cac4d79",
-    "url": "/module-fences-shop/static/css/main.063b634f.chunk.css"
+    "revision": "54fc072618bec263cd3a",
+    "url": "/module-fences-shop/static/css/main.dea875e4.chunk.css"
   },
   {
     "revision": "27918dd54200c594140d",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/module-fences-shop/static/js/2.b0b1860a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "80566d3f23a92cac4d79",
-    "url": "/module-fences-shop/static/js/main.42ce7d45.chunk.js"
+    "revision": "54fc072618bec263cd3a",
+    "url": "/module-fences-shop/static/js/main.a2771757.chunk.js"
   },
   {
     "revision": "9a11a7381144de07afa8",
