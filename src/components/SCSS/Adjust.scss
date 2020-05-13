@@ -12,6 +12,7 @@
     p{
         font-weight: 100;
         font-size: 1.5em;
+        margin-bottom: 50px;
     }
     .adjust-grid{
         transition: transform .5s  .5s ease;
@@ -28,6 +29,18 @@
             .main-image{
                 opacity: 1;
             }
+        }
+        
+        .product-list:nth-child(2){
+            transition: all .4s 1s ease;
+        }
+        .product-list:nth-child(3){
+            transition: all .4s 1.2s ease;
+        }
+        .product-list{
+            opacity: 1;
+            pointer-events: all;
+            height: 100%;
         }
     }
 }

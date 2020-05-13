@@ -3,7 +3,7 @@ import '../SCSS/ProductList.scss';
 import ProductListItem from './ProductListItem';
 const ProductList = ({ products, handleImageClick }) => {
     return (
-        <div className="product-list">
+        <div className="product-list scrollbar">
             <div className="list-box">
                 {products.map(product => <ProductListItem
                     key={product.id}
