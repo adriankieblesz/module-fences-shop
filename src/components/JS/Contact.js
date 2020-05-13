@@ -4,6 +4,11 @@ import ContactForm from './ContactForm';
 import '../SCSS/Contact.scss';
 class Contact extends Component {
     state = {
+        errorEmail: false,
+        errorTopic: false,
+        errorPhone: false,
+        errorMessage: false,
+        errorSubmit: false,
         validEmail: false,
         validTopic: false,
         validPhone: false,
@@ -13,47 +18,58 @@ class Contact extends Component {
 
     handleEmailOnChange = (e) => {
         /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.target.value) ? this.setState(() => ({
-            validEmail: true
+            validEmail: true,
+            errorEmail: false
         })) : this.setState(() => ({
-            validEmail: false
+            validEmail: false,
+            errorEmail: true
         }))
     }
     handleTopicOnChange = (e) => {
         let value = e.target.value;
         (value === "" || value === null) ? this.setState(() => ({
-            validTopic: false
+            validTopic: false,
+            errorTopic: true
         })) : this.setState(() => ({
-            validTopic: true
+            validTopic: true,
+            errorTopic: false
         }))
     }
     handleNrOnChange = (e) => {
         let value = e.target.value;
         if (value === "" || value === null) {
             this.setState(() => ({
-                validPhone: true
+                validPhone: true,
+                errorPhone: false
             }))
         }
         else {
             /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/.test(value) ? this.setState(() => ({
-                validPhone: true
+                validPhone: true,
+                errorPhone: false
             })) : this.setState(() => ({
-                validPhone: false
+                validPhone: false,
+                errorPhone: true
             }))
         }
     }
     handleMessageOnChange = (e) => {
         (e.target.value <= 0) ? this.setState(() => ({
-            validMessage: false
+            validMessage: false,
+            errorMessage: true
         })) : this.setState(() => ({
-            validMessage: true
+            validMessage: true,
+            errorMessage: false
         }))
     }
     handleOnSubmit = () => {
         const { validEmail, validTopic, validPhone, validMessage } = this.state;
         (validEmail && validTopic && validPhone && validMessage) ? this.setState(() => ({
-            submitValid: true
+            submitValid: true,
+            errorSubmit: false
         })) : this.setState(() => ({
-            submitValid: false
+            submitValid: false,
+            errorSubmit: true
         }))
     }
     render() {
@@ -69,11 +85,11 @@ class Contact extends Component {
                         handleNrOnChange={this.handleNrOnChange}
                         handleMessageOnChange={this.handleMessageOnChange}
                         handleOnSubmit={this.handleOnSubmit}
-                        validEmail={this.state.validEmail}
-                        validTopic={this.state.validTopic}
-                        validPhone={this.state.validPhone}
-                        validMessage={this.state.validMessage}
-                        submitValid={this.state.submitValid}
+                        errorEmail={this.state.errorEmail}
+                        errorTopic={this.state.errorTopic}
+                        errorPhone={this.state.errorPhone}
+                        errorMessage={this.state.errorMessage}
+                        errorSubmit={this.state.errorSubmit}
                     />
                 </div>
 
