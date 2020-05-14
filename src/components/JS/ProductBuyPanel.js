@@ -29,7 +29,7 @@ class ProductBuyPanel extends Component {
         }))
     }
     render() {
-        console.log(this.state.inputAmountValue);
+
         return (
             <div id="product-buy-panel">
                 <div className="buy-container">

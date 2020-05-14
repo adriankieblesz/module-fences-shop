@@ -10,7 +10,8 @@ class Container extends Component {
         products: [],
         fences: [],
         gates: [],
-        order: []
+        order: [],
+        orderAmount: 0
     }
     componentDidMount() {
         let fences = [];
@@ -72,29 +73,44 @@ class Container extends Component {
         // })
     }
     handleAddOrder = (details, amount) => {
-        let order = [];
-        order.push({
-            number: details.number,
-            type: details.type,
-            url: details.url,
-            name: details.name,
-            width: details.width,
-            height: details.height,
-            material: details.material,
-            spanCount: details.spanCount,
-            price: details.price,
-            amount: amount
-        })
-        this.setState((prevState) => ({
-            order: prevState.order.concat(order)
-        }))
+        if (amount > 0) {
+            let order = [];
+            order.push({
+                number: details.number,
+                type: details.type,
+                url: details.url,
+                name: details.name,
+                width: details.width,
+                height: details.height,
+                material: details.material,
+                spanCount: details.spanCount,
+                price: details.price,
+                amount: amount
+            })
+            this.setState((prevState) => ({
+                order: prevState.order.concat(order)
+            }));
+        }
+    }
+    componentDidUpdate() {
+        let amountSum = 0;
+        for (let i = 0; i < this.state.order.length; i++) {
+            amountSum += this.state.order[i].amount
+        }
+        if (this.state.orderAmount !== amountSum) {
+            this.setState(() => ({
+                orderAmount: amountSum
+            }))
+        }
+
     }
     render() {
         console.log(this.state.order);
+        console.log(this.state.orderAmount);
         return (
             <React.Fragment>
                 <Head />
-                <UserIconsPanel order={this.state.order} />
+                <UserIconsPanel orderAmount={this.state.orderAmount} />
                 <About />
                 <Services />
                 <Offer

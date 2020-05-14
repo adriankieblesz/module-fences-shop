@@ -147,7 +147,6 @@ class Adjust extends Component {
     }
 
     render() {
-        console.log(this.state.elements.indexOf());
         return (
 
             <div id="adjust">

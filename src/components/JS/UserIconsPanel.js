@@ -18,7 +18,6 @@ class UserIcons extends Component {
         }
     }
     render() {
-        console.log(this.state.order);
         return (
             <div id="user-icons">
                 <div className="icons-container">
@@ -36,7 +35,8 @@ class UserIcons extends Component {
                         className="sign-up"
                         content="Your order"
                         icon={basket}
-                        orderCounter={this.props.order.length > 0 && (this.props.order[0].amount > 0 ? <OrderCounter amount={this.props.order[0].amount} /> : null)}
+                        // orderCounter={this.props.order.length > 0 && (this.props.order[0].amount > 0 ? <OrderCounter amount={this.props.order[0].amount} /> : null)}
+                        orderCounter={this.props.orderAmount > 0 ? <OrderCounter amount={this.props.orderAmount} /> : null}
                     />
                 </div>
             </div>

@@ -73,7 +73,6 @@ class Contact extends Component {
         }))
     }
     render() {
-        console.log(this.state.validEmail);
         return (
             <section id="contact">
                 <h1>Get in touch</h1>

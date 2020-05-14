@@ -148,7 +148,7 @@ class Offer extends Component {
                         price={details.price * this.state.inputAmountValue}
                         inputAmountValue={this.state.inputAmountValue}
                         inputValueChange={this.handleInputAmountOnChange}
-                        addOrder={() => this.props.addOrder(details, this.state.inputAmountValue)}
+                        addOrder={() => this.props.addOrder(details, parseInt(this.state.inputAmountValue))}
                     />}
                 />)}
                 <Adjust
