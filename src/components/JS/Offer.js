@@ -3,69 +3,35 @@ import OfferGrid from './OfferGrid';
 import OfferForm from './OfferForm';
 import ModalWindow from './ModalWindow';
 import ProductInfoPanel from './ProductInfoPanel';
+import ProductBuyPanel from './ProductBuyPanel';
 import Adjust from './Adjust';
 import '../SCSS/Offer.scss';
 class Offer extends Component {
     state = {
-        products: [],
-        fences: [],
-        gates: [],
         info: false,
+        buy: false,
         details: null,
         modalClassName: "slide",
         type: function () { },
         material: function () { },
         searchValue: "",
-        priceStatement: this.descend
+        priceStatement: this.descend,
+        inputAmountValue: 0
     }
-    componentDidMount() {
-        let fences = [];
-        for (let i = 0; i < 10; i++) {
-            fences.push({
-                id: i + 1,
-                number: `TF000${i + 1}`,
-                type: "fence",
-                url: require(`../../images/fence-models/type-${i + 1}.png`),
-                name: `Type F${i + 1}`,
-                width: (100 + 5 * i),
-                height: 120,
-                material: "Metal",
-                spanCount: 2,
-                price: (100 + 10 * i),
-                buyClick: this.handleBuyClick,
-                infoClick: this.handleInfoClick
-            });
-        }
-        let gates = [];
-        for (let i = 0; i < 10; i++) {
-            gates.push({
-                id: i + 11,
-                number: `TG000${i + 1}`,
-                type: "gate",
-                url: require(`../../images/gate-models/type-${i + 1}.png`),
-                name: `Type G${i + 1}`,
-                width: (100 + 5 * i),
-                height: 120,
-                material: "Wood",
-                spanCount: 2,
-                price: (100 + 10 * i),
-                buyClick: this.handleBuyClick,
-                infoClick: this.handleInfoClick
-            });
-        }
 
-        let products = fences.concat(gates);
+    componentDidMount() {
+
         this.setState({
-            products,
-            fences,
-            gates,
             type: (product) => product.type === "fence" || product.type === "gate",
             material: (product) => product.material === "Metal" || product.material === "Wood"
         });
-
     }
-    handleBuyClick = (id) => {
-        alert(`Id of this product ${id}`);
+    handleBuyClick = (object) => {
+        this.setState(() => ({
+            buy: true,
+            details: object,
+            modalClassName: "slide slide-left"
+        }))
     }
     handleInfoClick = (object) => {
         this.setState(() => ({
@@ -134,9 +100,16 @@ class Offer extends Component {
             priceStatement: this.ascend
         }))
     }
+    handleInputAmountOnChange = (e) => {
+        let value = e.target.value;
+        this.setState(() => ({
+            inputAmountValue: value
+        }))
+    }
     render() {
 
-        const { products, details, type, material, info, searchValue, priceStatement, fences, gates } = this.state;
+        const { details, type, material, info, buy, searchValue, priceStatement, } = this.state;
+        const { products, fences, gates } = this.props;
         let filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase())).filter(type).filter(material).sort(priceStatement);
         return (
             <section id="offer">
@@ -148,8 +121,12 @@ class Offer extends Component {
                     handleOnChange={this.handleInputSearchOnChange}
                     handlePriceChange={this.handlePriceChange}
                 />
-                <OfferGrid products={filteredProducts} />
-                {info && <ModalWindow
+                <OfferGrid
+                    products={filteredProducts}
+                    buyClick={this.handleBuyClick}
+                    infoClick={this.handleInfoClick}
+                />
+                {(info && <ModalWindow
                     modalCloseClick={this.handleCloseModal}
                     className={this.state.modalClassName}
                     children={<ProductInfoPanel
@@ -162,7 +139,18 @@ class Offer extends Component {
                         spanCount={details.spanCount}
                         price={details.price}
                     />}
-                />}
+                />) || (buy && <ModalWindow
+                    modalCloseClick={this.handleCloseModal}
+                    className={this.state.modalClassName}
+                    children={<ProductBuyPanel
+                        name={details.name}
+                        url={details.url}
+                        price={details.price * this.state.inputAmountValue}
+                        inputAmountValue={this.state.inputAmountValue}
+                        inputValueChange={this.handleInputAmountOnChange}
+                        addOrder={() => this.props.addOrder(details, this.state.inputAmountValue)}
+                    />}
+                />)}
                 <Adjust
                     fences={fences}
                     gates={gates}

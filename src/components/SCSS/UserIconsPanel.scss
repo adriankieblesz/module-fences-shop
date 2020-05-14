@@ -1,0 +1,60 @@
+#user-icons{
+    position: fixed;
+    top: 140px;
+    // right: -115px;
+    right: 0;
+    z-index: 11;
+    text-align: left;
+    // background-color: #212121;
+    // padding: 15px;
+    // border-top-left-radius: 15px;
+    // border-bottom-left-radius: 15px;
+    .icons-container{
+        position: relative;
+        color: white;
+    }
+    .user-icon{
+        position: relative;
+        right: -115px;
+        background-color: #212121;
+        padding: 15px;
+        transition: .5s ease all;
+        
+        img{
+            width: 35px;
+            height: 35px;
+        }
+        p{
+            display: inline-block;
+            margin: 5px 0;
+            font-size: 1.3em;
+            vertical-align: bottom;
+            margin-left: 15px;
+        }
+        &:hover{
+            right: 0;
+            cursor: pointer;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        &:first-child{
+            border-top-left-radius: 15px;
+        }
+        &:last-child{
+            border-bottom-left-radius: 15px;
+        }
+        .order-counter{
+            display: inline-block;
+            position: absolute;
+            width: 25px;
+            height: 19.5px;
+            background-color: red;
+            left: 30px;
+            bottom: 12px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            font-size: .9em;
+        }
+    }
+}
