@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/module-fences-shop/precache-manifest.bb398b5d941e90cd37618babb9e482d1.js"
+  "/module-fences-shop/precache-manifest.feb7ded5aac53d09e5ffd6052926b3cc.js"
 );
 
 self.addEventListener('message', (event) => {
