@@ -2,7 +2,7 @@
 
 This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Project is extension of my first Web Application hosted under link https://github.com/adriankieblesz/Module_fences
+Project is extension of my first Web Application hosted under link https://github.com/adriankieblesz/Module_fences </br>
 It is simple concept of web application (**online shop**) that will provide features like:
   -possibility of browsing for stuff offered by Web Page's Administrator/Owner (module-fences, gates) - already implemented,
   -filtering or searching for specific products - already implemented,
