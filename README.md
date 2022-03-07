@@ -10,7 +10,7 @@ It is simple concept of web application (**online shop**) that will provide feat
   -possibility to contact with Web Page's Owner, </br>
   -possibility to make an order, </br>
   -possibility to creat user account and manage it, </br>
-  -possibility to manage Web Page from the role of Administrator (CRUD) </br></br>
+  -possibility to manage Web Page from the role of Administrator (CRUD interface) </br></br>
 
 
 Below are listed concepts that has been used for project so far: </br>
