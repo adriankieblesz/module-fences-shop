@@ -23,5 +23,7 @@ Below are listed concepts that has been used for project so far: </br>
 Below are listed concepts that will be used in nearest future: </br>
   -SQL </br>
   -Entity Framework Core </br>
-  -RESTFul API.
+  -RESTFul API. </br></br></br></br>
+  
+  Last update: 07.03.2022
   
