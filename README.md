@@ -1,4 +1,4 @@
-**This project is still underway** (RWD and back-end will be implemented in neares future)
+**This project is still underway** (RWD and back-end will be implemented in nearest future)
 
 This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
