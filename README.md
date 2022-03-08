@@ -21,6 +21,7 @@ Below are listed concepts that has been used for project so far: </br>
   -Fetching data from server. </br></br>
   
 Below are listed concepts that will be used in nearest future: </br>
+  -RWD </br>
   -React Router </br>
   -SQL </br>
   -Entity Framework Core </br>
